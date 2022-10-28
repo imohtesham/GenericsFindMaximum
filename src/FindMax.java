@@ -22,9 +22,14 @@ public class FindMax <E extends Comparable> {
             return null;
         }else {
             Collections.sort(Arrays.asList(e1));
+            printMax(e1[e1.length-1]);
             return e1[e1.length -1];
         }
     }
+    public static <E> void printMax(E element){
+        System.out.println("Maximum value : " + element);
+    }
+
 
     public static void main(String[] args) {
         System.out.println("Welcome to the Find Maximum Program");
